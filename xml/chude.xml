@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfChude xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <chude>
+    <id>doisong</id>
+    <tenchude>ĐỜI SỐNG</tenchude>
+    <img>img/doisong.jpg</img>
+  </chude>
+  <chude>
+    <id>kinhdoanh</id>
+    <tenchude>KINH DOANH</tenchude>
+    <img>img/kinhdoanh.jpg</img>
+  </chude>
+  <chude>
+    <id>giaitri</id>
+    <tenchude>GIẢI TRÍ</tenchude>
+    <img>img/giaitri.jpg</img>
+  </chude>
+  <chude>
+    <id>thethao</id>
+    <tenchude>THỂ THAO</tenchude>
+    <img>img/thethao.jpg</img>
+  </chude>
+  <chude>
+    <id>congnghe</id>
+    <tenchude>CÔNG NGHỆ</tenchude>
+    <img>img/congnghe.jpg</img>
+  </chude>
+</ArrayOfChude>

@@ -1,0 +1,396 @@
+﻿.content-banner {
+    margin: 0 auto;
+    width: 100%;
+    /* height: 2000px; */
+    max-width: 1100px;
+    background-color: rgb(223, 228, 228);
+    border-radius: 10px;
+}
+
+
+.cong-dongbv {
+    margin-top: -20px;
+    margin-left: 0px;
+    height: 150px;
+    width: 100%;
+    background-image: url('../img/background.jpg');
+    position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.bai-viet {
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.noidung-chinh {
+    display: flex;
+    bottom: 3%;
+    position: absolute;
+    transform: translateX(1%);
+}
+
+    .noidung-chinh .image {
+        margin-right: 20px;
+    }
+
+.imagebv {
+    margin-top: 70px;
+    transform: translateX(30%);
+}
+.imagebv img{
+    border-radius:10px;
+}
+.noi-dung {
+    color: rgb(0, 0, 0);
+    margin-top: 75px;
+    transform: translateX(45%);
+}
+
+    .noi-dung a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .noi-dung p {
+        font-size: 13px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+.tham-gia {
+    background-color: #003B70;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+    .tham-gia:hover {
+        cursor: pointer;
+        background-color: #085aa2;
+    }
+
+/* Style tab links */
+.btntab {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.noidungtab {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+}
+
+/* Thanh share banner*/
+
+.share-bn {
+    transform: translateY(-50px);
+    height: 60px;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* margin-left: 10px; */
+}
+
+.box-tool {
+   
+}
+
+.avt {
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.stt {
+    height: 30px;
+    width: 450px;
+}
+
+.box-tool input {
+    border: 1px solid #003B70;
+    border-radius: 5px;
+    margin-left: -5px;
+    width: 450px;
+    transform: translateX(-10%);
+}
+
+
+
+    .dang-bai input {
+        padding: 8px;
+        background-color: #003B70;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .dang-bai :hover {
+        background-color: #085aa2;
+    }
+
+.dropdown-btn {
+    border: none;
+    font-size: 16px;
+    color: #003B70;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.filter {
+    margin-top: -30px;
+}
+
+.op {
+    border: none;
+}
+
+.box-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+
+/*Các bài đăng-----------------*/
+.general {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    width: 100%;
+
+}
+.general .dieuhuong{
+    margin-bottom:30px;
+
+}
+.anh-ten {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ten {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+    .ten .hoten {
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .ten .gio {
+        color: grey;
+        font-size: 12px;
+    }
+
+.before-cmt {
+    border-radius: 10px;
+}
+
+.after-cmt {
+    border-radius: 10px;
+    background-color: #ecf0f4;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+/*------bài viết trạng thái--------*/
+.write {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+/*.write-1 p {
+    text-indent: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+    margin-top: 20px;
+}
+*/
+.imgg1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transform: translateX(10%);
+}
+
+.activity-icons {
+    margin-top: 10px;
+    margin-left: 10%;
+    display: flex;
+    font-size: 18px;
+    color: #003B70;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .activity-icons i {
+        font-weight: 900;
+    }
+
+        .activity-icons i:hover {
+            color: #085aa2;
+        }
+
+.cmt {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #ecf0f4;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+
+.list-cmt {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+    .list-cmt .cmt-box {
+        margin-bottom: -20px;
+        margin-left: 60px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        transform: translateY(-47%);
+    }
+
+.cmt-box  a {
+    font-weight: bold;
+}
+
+.cmt-box span {
+    font-size: 13px;
+}
+
+.cmt-box .reply {
+    display: flex;
+    flex-direction: row;
+}
+
+    .cmt-box .reply p {
+        margin-top: 5px;
+        color: gray;
+    }
+
+.cmt-box .reply a, i {
+    cursor: pointer;
+}
+
+.comment {
+    display: flex;
+    margin-top: 25px;
+    align-items:center;
+}
+
+    .comment .box-circle {
+        margin-left: 20px;
+    }
+form{
+    display:flex;
+    flex-direction:row;
+    align-items:safe center;
+}
+    .comment .send {
+        background-color:#003B70;
+       padding:12px;
+       margin-left:20px;
+        font-weight: bold;
+        margin-top: 5px;
+        color:aliceblue;
+        cursor: pointer;
+        border:none;
+        border-radius:5px;
+    }
+
+.binhluan {
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 7px;
+    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+}
+
+#Gioithieu p {
+    background-color: #ecf0f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:900px) {
+   
+   
+
+    .btntab {
+        width: 30%;
+    }
+    .binhluan{
+        width:400px;
+    }
+}
+
+@media screen and (max-width:700px) {
+   
+    .box-tool input{
+        width:300px;
+    }
+    
+    .btntab {
+        width: 50%;
+    }
+
+    .noi-dung a {
+        font-size: 16px;
+    }
+    .binhluan{
+        width:250px;
+    }
+}
+@media screen and (max-width:500px) {
+
+    .box-tool input {
+        width: 200px;
+    }
+
+    .btntab {
+        width: 50%;
+    }
+
+    .noi-dung a {
+        font-size: 16px;
+    }
+
+    .binhluan {
+        width: 250px;
+    }
+}

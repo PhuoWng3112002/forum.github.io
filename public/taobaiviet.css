@@ -1,0 +1,83 @@
+﻿
+.taoform {
+    width: 50%;
+    margin-left: 150px;
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+}
+
+.taoform .before-taobv {
+    color: gray;
+    
+}
+.classcd{
+    padding-top:50px;
+}
+
+.classcd .taocdong {
+    width: 80%;
+    height: 30px;
+    border: 1px solid #00370B;
+    border-radius: 5px;
+
+    margin-left:35px;
+}
+
+.tao-title {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #00370B;
+    border-radius: 5px;
+}
+
+.classcd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+.tao-btn {
+    padding: 7px;
+    border: none;
+    outline: none;
+    background-color: #003B70;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taoform input[type="submit"] {
+    float: right;
+}
+
+.classbtn {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:900px) {
+    .taoform {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .taoform input[type="reset"] {
+        margin-left: 200px;
+    }
+}
+
+
+
+
+/*history back*/
+.btnback{
+    background-color:transparent;
+    border:none;
+    outline:none;
+}

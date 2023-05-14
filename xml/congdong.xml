@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<listcongdong>
+  <congdong>
+    <idcongdong>KD1</idcongdong>
+    <image>img/kinhdoanh.jpg</image>
+    <tencongdong>Quốc Tế</tencongdong>
+    <chude>KINH DOANH</chude>
+    <sothanhvien>20</sothanhvien>
+    <sobaiviet> 17</sobaiviet>
+    <idchude>kinhdoanh</idchude>
+  </congdong>
+  <congdong>
+    <idcongdong>CN6</idcongdong>
+    <image>img/congnghe.jpg</image>
+    <tencongdong>Công nghệ cập nhập dữ liệu</tencongdong>
+    <chude>CÔNG NGHỆ</chude>
+    <sothanhvien>456</sothanhvien>
+    <sobaiviet> 12</sobaiviet>
+    <idchude>congnghe</idchude>
+  </congdong>
+  <congdong>
+    <idcongdong>DS1</idcongdong>
+    <image>img/doisong.jpg</image>
+    <tencongdong>Tổ ấm</tencongdong>
+    <chude>ĐỜI SỐNG</chude>
+    <sothanhvien>15</sothanhvien>
+    <sobaiviet> 7</sobaiviet>
+    <idchude>doisong</idchude>
+  </congdong>
+  <!--Giải trí-->
+  <congdong>
+    <idcongdong>GT1</idcongdong>
+    <image>img/giaitri.jpg</image>
+    <tencongdong>Giới sao</tencongdong>
+    <chude>GIẢI TRÍ</chude>
+    <sothanhvien>124</sothanhvien>
+    <sobaiviet> 52</sobaiviet>
+    <idchude>giaitri</idchude>
+  </congdong>
+  <congdong>
+    <idcongdong>TT1</idcongdong>
+    <image>img/thethao.jpg</image>
+    <tencongdong>Bóng đá</tencongdong>
+    <chude>THỂ THAO</chude>
+    <sothanhvien>15</sothanhvien>
+    <sobaiviet> 7</sobaiviet>
+    <idchude>thethao</idchude>
+  </congdong>
+  <congdong>
+    <idcongdong>KD2</idcongdong>
+    <image>img/unnamed (1).jpg</image>
+    <tencongdong>Bất động sản</tencongdong>
+    <chude>KINH DOANH</chude>
+    <sothanhvien>0</sothanhvien>
+    <sobaiviet>0</sobaiviet>
+    <idchude>kinhdoanh</idchude>
+  </congdong>
+</listcongdong>

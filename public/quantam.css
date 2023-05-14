@@ -1,0 +1,14 @@
+﻿.chuaquantam .khampha {
+    background-color: #003B70;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+    .chuaquantam .khampha a {
+        color: #f9f9f9;
+        text-decoration: none;
+    }

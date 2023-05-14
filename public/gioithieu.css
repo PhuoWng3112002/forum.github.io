@@ -1,0 +1,118 @@
+﻿.maingt {
+    height: 100%;
+    width: 100%;
+    background: white;
+    font-family:'Times New Roman';
+}
+
+.menugt {
+    margin-top: 50px;
+    height: 100px;
+    display: flex;
+    background-color: white;
+}
+.menugt h6 {
+    display: flex;
+    align-items: center;
+}
+
+.anhgt {
+    margin-left: 30px;
+}
+
+.kd {
+    margin-left: 60px;
+}
+
+.cn {
+    margin-left: 60px;
+}
+
+.ds {
+    margin-left: 60px;
+}
+
+.gt {
+    margin-left: 60px;
+}
+
+.tt {
+    margin-left: 60px;
+}
+
+.writegt {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footergt {
+    background-color:white;
+    padding-bottom: 50px;
+}
+
+.gcb {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.introduce {
+    width: 25%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.chuyen-muc {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 25%;
+}
+
+.box-toolgt .stt {
+    width: 100px;
+}
+
+#map {
+    width: 80%;
+}
+
+.dang-baigt {
+    margin-top: 5px;
+    margin-left: 170px;
+}
+
+.ggmap {
+    width: 35%;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .gcb {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduce {
+        width: 70%;
+        margin-left: 100px;
+    }
+
+    .chuyen-muc {
+        width: 70%;
+        margin-left: 100px;
+    }
+
+    .ggmap {
+        width: 70%;
+        margin-left: 100px;
+    }
+
+    .menugt h6 {
+        display: none;
+    }
+
+    .anhgt {
+        margin-left: 40%;
+    }
+}
