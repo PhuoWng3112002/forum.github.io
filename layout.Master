@@ -1,0 +1,439 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layout.master.cs" Inherits="LTWde6.layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Diễn đàn thảo luận</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/home.css">
+    <link rel="stylesheet" href="public/chude.css">
+    <link rel="stylesheet" href="public/quantri.css">
+    <link rel="stylesheet" href="public/quantam.css">
+    <link rel="stylesheet" href="public/trangcongdong.css">
+    <%--<a href="layout.Master">layout.Master</a>--%>
+    <link rel="stylesheet" href="public/gioithieu.css">
+    <link rel="stylesheet" href="public/taobaiviet.css">
+    <link href="public/dangnhapdangki.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="img/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1qFygjsIS4ZRHzt2Lo4knR3-pHylbahXVSA&usqp=CAU" />
+<%--  <script src="https://cdn.ckeditor.com/4.17.0/standard-all/ckeditor.js"></script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%--<form id="form1" runat="server" action="trangchu.aspx" method="get">--%>
+        
+   <%--  phần header --%>
+<div class="header">
+    <%-- logo --%>
+    <span style="--clr:#ffd800" class="aude">
+        <a href="trangchu.aspx" data-text="&nbsp;FORUM">&nbsp;FORUM&nbsp;</a>
+    </span>
+    <%--  menu --%>
+     
+        
+    <div class="menu">
+
+        <a href="trangchu.aspx">Trang chủ</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn"> Khám phá
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="chude" runat="server"  >
+            
+          
+          </div>
+        </div> 
+        <a href="gioithieu.aspx">Giới thiệu</a>
+        <a href="ckeditor.aspx"><i class="fa fa-pen"></i>Tạo bài viết</a>
+    </div>
+
+    <%-- search-box &Sign in --%>
+    <div class="menu-right">
+         <%-- search-box  --%>
+        <span class="menu-search">
+            <div class="search-container">
+                <form id="formsearch" action="trangchu.aspx" method="get" >
+                    <input class="input-search" type="text" placeholder="Tìm kiếm" name="search" />
+                    <button class="btn-search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    
+                </form>
+
+            </div>
+        </span>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fa fa-user" style="transform: translateY(-10px);font-size: 25px;"><span style="font-size:16px; font-weight:100;">Tài khoản</span></i>
+          </button>
+          <div class="dropdown-content" name="non-account" id="account" runat="server"  >
+            
+          
+          </div>
+        </div> 
+      
+  </div>
+  
+</div>
+<%-- phan phu responsive --%>
+<div class="menu2">
+  <a href="trangchu.aspx">Trang chủ</a>
+  <div class="subnav">
+    <button class="subnavbtn">Khám phá <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content" id="chude2" runat="server" >
+     
+    </div>
+  </div> 
+
+  <a href="gioithieu.aspx"> Giới thiệu</a>
+  <a href="ckeditor.aspx"><i class="fa fa-pen"></i>Tạo bài viết</a>
+    
+
+</div>
+
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+<%--footer in here          --%>
+    <div class="main_footer">
+        <div id="onl" runat="server"></div>
+        <div class="footer-tool">
+                
+                <div id="backtop" onclick="topFunction()">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="listforum grid_column" >
+                        <h3 class="footer__heading">Forum 
+                            <button onclick="dropdown_ft1()" class="dropdown-btn">
+                                <i class="fas fa-caret-down"></i> 
+                            </button>
+                        </h3>
+                        <ul id="ft-drop1" class="footer_list">
+                            <li class="footer-item">
+                                <a href="trangchu.aspx" class="footer-link">Trang chủ</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Khám phá</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="gioithieu.aspx" class="footer-link">Giới thiệu</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="quantam.aspx" class="footer-link">Quan tâm</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="diendan grid_column" >
+                        <h3 class="footer__heading">Diễn đàn 
+                            <button onclick="dropdown_ft2()" class="dropdown-btn">
+                                <i class="fas fa-caret-down"></i> 
+                            </button>
+                        </h3>
+                        <ul id="ft-drop2" class="footer_list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Công nghệ</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Kinh doanh</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Đời sống</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Thể thao</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Giải trí</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="hotro grid_column" >
+                        <h3 class="footer__heading">Tìm hiểu & hỗ trợ 
+                            <button onclick="dropdown_ft3()" class="dropdown-btn">
+                                <i class="fas fa-caret-down"></i> 
+                            </button>
+                        </h3>
+                        <ul  id="ft-drop3" class="footer_list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Trợ giúp của quản trị viên</a>
+                            </li>
+                            
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Trung tâm thiết lập và triển khai</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Tìm đối tác cho Forum</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Báo chí</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Báo cáo & Phản hồi</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Diễn đàn dành cho quản trị viên</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Trung tâm kiến thức dành cho người dùng</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Câu hỏi thường gặp</a>
+                            </li>
+
+                           
+                        </ul>
+
+                    </div>
+
+                    <div class="thamkhao grid_column" >
+                        <h3 class="footer__heading">Tham khảo
+                            <button onclick="dropdown_ft4()" class="dropdown-btn">
+                                <i class="fas fa-caret-down"></i> 
+                            </button>
+                        </h3>
+                        <ul id="ft-drop4" class="footer_list">
+                            <li class="footer-item">
+                                <a href="https://www.webtretho.com/" class="footer-link">Webtretho.com</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="https://tinhte.vn/" class="footer-link">Tinhte.com</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="https://hoclieu.hou.edu.vn/" class="footer-link">Giáo trình Lập trình Web khoa CNTT- Đại học Mở Hà Nội</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Bài giảng & Tài nguyên của Giảng viên</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="lienhe grid_column">
+                        <h3 class="footer__heading" >Liên hệ 
+                            <button onclick="dropdown_ft5()" class="dropdown-btn">
+                                <i class="fas fa-caret-down"></i> 
+                            </button>
+                        </h3>
+                        <ul id="ft-drop5" class="footer_list">
+                            <li class="footer-item">
+                                <a href="https://Facebook.com/" class="fb">
+                                    <i class="fab fa-facebook"></i>
+                                    
+                                    Facebook
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="https://Instagram.com/" class="ins">
+                                    <i class="fab fa-instagram-square"></i>
+                                    Instagram
+                                </a>
+                            </li>
+
+                            <li class="footer-item">
+                                <a href="https://Youtube.com/" class="yt">
+                                    <i class="fab fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer_end">
+                <p>FE&BE by Nguyen Thi Phuong</p>
+
+            </div>
+
+        </div>
+        
+   <%-- </form>--%>
+    <script>
+        function checktrongqt() {
+            const loiqtid = document.querySelector("#loiqtid");
+            const loiqt = document.querySelector("#loiqt");
+            const loiqtcde = document.querySelector("#loiqtcde");
+            const loiqtimg = document.querySelector("#loiqtimg");
+            const idcde = document.querySelector("#idcde").value;
+            const chudeqt = document.querySelector("#chudeqt").value;
+            const imgcde = document.querySelector("#imgcde").value;
+
+            var checkqt = true;
+            loiqt.innerHTML = "";
+            loiqtid.innerHTML = "";
+            loiqtcde.innerHTML = "";
+            loiqtimg.innerHTML = "";
+            if (idcde == "" && imgcde == "" && chudeqt == "") {
+                loiqt.innerHTML += "* Vui lòng nhập đầy đủ thông tin quản trị chủ đề!";
+                checkqt = false;
+            }
+            if (idcde == "") {
+                loiqtid.innerHTML += "* ID không được để trống";
+                checkqt = false;
+            }
+            if (chudeqt == "") {
+                loiqtcde.innerHTML += "* Tên chủ đề không được để trống";
+                checkqt = false;
+
+            }
+            if (imgcde == "") {
+                loiqtimg.innerHTML += "* Ảnh không được để trống";
+                checkqt = false;
+
+            }
+            return checkqt;
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="public/home.js"></script>
+    <script type="text/javascript" src="public/trangcongdong.js"></script>
+    <script type="text/javascript" src="public/quantri.js"></script>
+    <script type="text/javascript" src="public/taobaiviet.js"></script>
+    <script src="CKeditor/ckeditor.js"></script>
+    <script src="CKeditor/adapters/jquery.js"></script>
+    <script src="CKeditor/styles.js"></script>
+
+    <script>
+        /*Function check trong tao bai viet*/ 
+        function checkbv() {
+            const title = document.querySelector("#title").value;
+            const editor1 = document.querySelector("#editor1").value;
+            const loitrong = document.querySelector("#loi");
+            var checktrong = true;
+            if (title == "") {
+                loitrong.innerHTML = "* Tiêu đề bài viết không được để trống";
+                checktrong = false;
+            }
+            if (editor1 == "") {
+                loitrong.innerHTML = "* Nội dung bài viết không được để trống";
+                checktrong = false;
+
+            }
+            return checktrong;
+        }
+       
+        function checktrongqt() {
+            const loiqtid = document.querySelector("#loiqtid");
+            const loiqt = document.querySelector("#loiqt");
+            const loiqtcde = document.querySelector("#loiqtcde");
+            const loiqtimg = document.querySelector("#loiqtimg");
+            const idcde = document.querySelector("#idcde").value;
+            const chudeqt = document.querySelector("#chudeqt").value;
+            const imgcde = document.querySelector("#imgcde").value;
+
+            var checkqt = true;
+            loiqt.innerHTML = "";
+            loiqtid.innerHTML = "";
+            loiqtcde.innerHTML = "";
+            loiqtimg.innerHTML = "";
+            if (idcde == "" && imgcde == "" && chudeqt == "") {
+                loiqt.innerHTML += "* Vui lòng nhập đầy đủ thông tin quản trị chủ đề!";
+                checkqt = false;
+            }
+           if(idcde == "") {
+                loiqtid.innerHTML += "* ID không được để trống";
+                checkqt = false;
+            }
+            if (chudeqt == "") {
+                loiqtcde.innerHTML += "* Tên chủ đề không được để trống";
+                checkqt = false;
+
+            }
+            if(imgcde == "") {
+                loiqtimg.innerHTML += "* Ảnh không được để trống";
+                checkqt = false;
+
+            }
+            return checkqt;
+      
+      var mybutton = document.getElementById("backtop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        //}
+            /*CONG DONG*/
+
+            function checktrongcd() {
+                const loiqtid = document.querySelector("#loiqtid");
+                const loiqt = document.querySelector("#loiqt");
+                const loiqtcde = document.querySelector("#loiqtcde");
+                const loiqtimg = document.querySelector("#loicdimg");
+                const idcde = document.querySelector("#idcde").value;
+                const chudeqt = document.querySelector("#chudeqt").value;
+                const imgcde = document.querySelector("#imgcde").value;
+
+                var checkqt = true;
+                loiqt.innerHTML = "";
+                loiqtid.innerHTML = "";
+                loiqtcde.innerHTML = "";
+                loiqtimg.innerHTML = "";
+                if (idcde == "" && imgcde == "" && chudeqt == "") {
+                    loiqt.innerHTML += "* Vui lòng nhập đầy đủ thông tin quản trị chủ đề!";
+                    checkqt = false;
+                }
+                if (idcde == "") {
+                    loiqtid.innerHTML += "* ID không được để trống";
+                    checkqt = false;
+                }
+                if (chudeqt == "") {
+                    loiqtcde.innerHTML += "* Tên chủ đề không được để trống";
+                    checkqt = false;
+
+                }
+                if (imgcde == "") {
+                    loiqtimg.innerHTML += "* Ảnh không được để trống";
+                    checkqt = false;
+
+                }
+                return checkqt;
+        }
+    </script>
+
+</body>
+</html>
