@@ -1,34 +1,67 @@
 # Forum
 Design a forum website
 
-Quản trị:
-
+<b>Quản trị:</b>
+<ul>
+  <li>
  Đăng nhập
-
+  </li>
+  <li>
  Thêm bài viêt
-
+    
+  </li>
+  <li>
  Xóa bài viết
-
+    
+  </li>
+    
+  <li>
  Thêm chủ đề
-
+  </li>
+  <li>
  Xóa chủ đề
-
+  </li>
+  <li>
  Thêm cộng đồng
-
+  </li>
+  <li>
  Xóa cộng đồng
-
+    
+  </li>
+  <li>
  Bình luận
+    
+  </li>
+</ul>
 
-Người dùng:
 
+
+
+
+
+
+
+<b>Người dùng:</b>
+<ul>
+  <li>    
  Đăng nhập
-
+  </li>
+  
+  <li>
  Đăng kí
-
+  </li>
+  
+  <li>
  Đăng bài viết( thảo luận)
+  </li>
+  
+  <li>
+ Bình luận    
+  </li>
+</ul>
 
- Bình luận
-2. Sơ đồ chức năng
+<b>2. Sơ đồ chức năng</b>
+   
 *Admin
 
 ![image](https://github.com/PhuoWng3112002/forum.github.io/assets/107473716/2e53e1fc-81d5-4294-8171-f57f279e7931)
