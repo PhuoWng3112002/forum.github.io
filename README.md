@@ -4,21 +4,29 @@ Design a forum website
 Quản trị:
 
  Đăng nhập
+
  Thêm bài viêt
+
  Xóa bài viết
+
  Thêm chủ đề
+
  Xóa chủ đề
+
  Thêm cộng đồng
+
  Xóa cộng đồng
+
  Bình luận
 
 Người dùng:
 
-
  Đăng nhập
+
  Đăng kí
- Đăng bài viết( thảo
-luận)
+
+ Đăng bài viết( thảo luận)
+
  Bình luận
 2. Sơ đồ chức năng
 *Admin
